@@ -1,0 +1,51 @@
+QUES:WAP of java to compare two sets
+ANS:
+import java.util.*;
+
+public class Sets
+{
+    public static void main(String[] args)
+    {
+        HashSet hashSet=new HashSet();
+        hashSet.add("a");
+        hashSet.add("b");
+        hashSet.add("c");
+        hashSet.add("d");
+        System.out.println(hashSet);
+        
+
+         HashSet hashSet2=new HashSet();
+        hashSet2.add("a");
+        hashSet2.add("b");
+        hashSet2.add("k");
+        hashSet2.add("d");
+        System.out.println(hashSet2);
+        hashSet.retainAll(hashSet2);
+         System.out.println(hashSet);
+        
+    }
+}
+
+
+QUES2:WAP of java to associate the value with a specified key.
+ANS2:
+
+package acadview;
+
+import java.util.*;
+
+public class Mapques
+{
+    public static void main(String[] args)
+    {
+        Map myobject =new HashMap() ;
+        myobject.put("b", 20);
+        myobject.put("c", 200);
+        myobject.put("d", 10);
+        
+        myobject.replace("b",20,30);
+        System.out.print(myobject);
+        
+    }
+}
+
